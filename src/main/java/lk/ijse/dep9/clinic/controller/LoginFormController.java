@@ -25,6 +25,7 @@ public class LoginFormController {
     }
 
     public void btnLoginOnAction(ActionEvent actionEvent) throws ClassNotFoundException, IOException {
+        // Implement login logic data validations
         String username = txtUsername.getText();
         String password = txtPassword.getText();
 
