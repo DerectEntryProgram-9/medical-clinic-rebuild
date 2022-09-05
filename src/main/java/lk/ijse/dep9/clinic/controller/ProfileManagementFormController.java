@@ -17,6 +17,7 @@ public class ProfileManagementFormController {
     public JFXButton btnDeleteProfile;
 
     public void btnAddProfileOnAction(ActionEvent actionEvent) {
+        //
     }
 
     public void btnModifyProfileOnAction(ActionEvent actionEvent) {
