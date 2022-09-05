@@ -25,5 +25,6 @@ public class ProfileManagementFormController {
     }
 
     public void btnDeleteProfileOnAction(ActionEvent actionEvent) {
+        //
     }
 }
