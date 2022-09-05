@@ -18,13 +18,19 @@
          <children>
             <VBox alignment="CENTER" spacing="10.0">
                <children>
-                  <Label text="Username" />
+                  <Label text="Username">
+                     <font>
+                        <Font name="Ubuntu Bold" size="13.0" />
+                     </font></Label>
                   <JFXTextField fx:id="txtUsername" alignment="CENTER" prefHeight="23.0" prefWidth="272.0" />
                </children>
             </VBox>
             <VBox alignment="CENTER" spacing="10.0">
                <children>
-                  <Label text="Password" />
+                  <Label text="Password">
+                     <font>
+                        <Font name="Ubuntu Bold" size="13.0" />
+                     </font></Label>
                   <JFXPasswordField fx:id="txtPassword" alignment="CENTER" />
                </children>
             </VBox>
