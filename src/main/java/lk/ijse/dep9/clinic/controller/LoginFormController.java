@@ -65,14 +65,16 @@ public class LoginFormController {
             /* Prepared Statement */
 //            String sql = "SELECT role FROM User WHERE username=? AND password=?"; // ? - (Positional Parameters)values can be changed
                                                                                     // parameters index from 1 (?1, ?2, ?3 ...)
-            String sql = "SELECT role FROM User WHERE username=?";
+            String sql = "SELECT role, password FROM User WHERE username=?";
             PreparedStatement stm = connection.prepareStatement(sql);
             stm.setString(1,username);
 //            stm.setString(2,password);
+//            ResultSet resultSet = stm.executeQuery(sql);
             ResultSet resultSet = stm.executeQuery(sql);
 
             if (resultSet.next()) {
                 String cipherText = resultSet.getString("password");
+
                 if (!CryptoUtil.getSha256Hex(password).equals(cipherText)) { // Verify sha values form database and user input value
                     new Alert(Alert.AlertType.ERROR,"Invalid login credentials").show();
                     txtUsername.requestFocus();

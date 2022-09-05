@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.clinic.controller.ProfileManagementFormController">
+   <children>
+      <TableView fx:id="tblView" layoutX="21.0" layoutY="24.0" prefHeight="293.0" prefWidth="558.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="24.0">
+        <columns>
+          <TableColumn fx:id="colNo" prefWidth="75.0" text="No" />
+          <TableColumn fx:id="colType" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="colName" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="147.0" text="Address" />
+            <TableColumn fx:id="colContact" prefWidth="185.0" text="Contact details" />
+        </columns>
+      </TableView>
+      <HBox layoutX="60.0" layoutY="341.0" spacing="15.0">
+         <children>
+            <JFXButton fx:id="btnAddProfile" onAction="#btnAddProfileOnAction" prefHeight="26.0" prefWidth="150.0" text="ADD PROFILE" />
+            <JFXButton fx:id="btnModifyProfile" onAction="#btnModifyProfileOnAction" prefHeight="30.0" prefWidth="150.0" text="MODIFY PROFILE" />
+            <JFXButton fx:id="btnDeleteProfile" onAction="#btnDeleteProfileOnAction" prefHeight="30.0" prefWidth="150.0" text="DELETE PROFILE" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,6 @@
+#btnProfileManagement, #btnSettings, #btnViewRecords{
+    -fx-background-color: #0094ff;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}

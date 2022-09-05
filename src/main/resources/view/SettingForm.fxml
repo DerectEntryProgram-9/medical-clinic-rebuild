@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/setting-form.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.clinic.controller.SettingFormController">
+   <children>
+      <Label layoutX="277.0" layoutY="45.0" text="SETTINGS" />
+      <VBox layoutX="31.0" layoutY="105.0" spacing="10.0">
+         <children>
+            <JFXButton fx:id="btnManagePrices" onAction="#btnManagePricesOnAction" prefHeight="30.0" prefWidth="150.0" text="MANAGE PRICES" />
+            <JFXButton fx:id="btnAddDiscount" onAction="#btnAddDiscountOnAction" prefHeight="30.0" prefWidth="150.0" text="ADD DISCOUNT" />
+            <JFXButton fx:id="btnAddFields" onAction="#btnAddFieldsOnAction" prefHeight="30.0" prefWidth="150.0" text="ADD FIELDS" />
+            <JFXButton fx:id="btnChangePassword" onAction="#btnChangePasswordOnAction" prefHeight="30.0" prefWidth="150.0" text="CHANGE PASSWORD" />
+            <JFXButton fx:id="btnAbout" onAction="#btnAboutOnAction" prefHeight="30.0" prefWidth="150.0" text="ABOUT" />
+         </children>
+      </VBox>
+      <TextArea layoutX="217.0" layoutY="95.0" prefHeight="247.0" prefWidth="347.0" />
+   </children>
+</AnchorPane>

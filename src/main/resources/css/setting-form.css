@@ -1,0 +1,4 @@
+#btnAbout, #btnAddDiscount, #btnAddFields, #btnManagePrices, #btnChangePassword{
+    -fx-background-color: #0094ff;
+    -fx-text-fill: white;
+}

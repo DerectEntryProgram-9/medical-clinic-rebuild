@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.clinic.controller.AdminDashboardFormController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/admin-dashboard-form.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.clinic.controller.AdminDashboardFormController">
    <children>
-      <Label layoutX="245.0" layoutY="42.0" text="Admin Dashboard" />
+      <Label layoutX="123.0" layoutY="34.0" text="MEDICARE CHANNELING CENTER">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font></Label>
+      <Label layoutX="228.0" layoutY="101.0" text="ADMINISTRATOR">
+         <font>
+            <Font name="Ubuntu Condensed" size="23.0" />
+         </font>
+      </Label>
+      <VBox layoutX="150.0" layoutY="173.0" spacing="20.0">
+         <children>
+            <JFXButton fx:id="btnProfileManagement" onAction="#btnProfileManagementOnAction" prefHeight="35.0" prefWidth="300.0" text="Profile Management" />
+            <JFXButton fx:id="btnViewRecords" onAction="#btnViewRecordsOnAction" prefHeight="35.0" prefWidth="300.0" text="View Records" />
+            <JFXButton fx:id="btnSettings" onAction="#btnSettingsOnAction" prefHeight="35.0" prefWidth="300.0" text="Settings" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
