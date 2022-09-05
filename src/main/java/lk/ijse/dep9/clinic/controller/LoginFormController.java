@@ -47,6 +47,7 @@ public class LoginFormController {
         }
 
         Class.forName("com.mysql.cj.jdbc.Driver");
+        // Connect to the medical_clinic database
         try(Connection connection = DriverManager.
                 getConnection("jdbc:mysql://localhost:3306/medical_clinic", "root", "mysql")) {
             System.out.println(connection);
